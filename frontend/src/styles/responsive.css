@@ -1,0 +1,510 @@
+/* Responsive Styles - Global */
+
+/* Large screens (desktops, 1024px and up) */
+@media (min-width: 1025px) {
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2rem;
+  }
+  
+  .grid-3 {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  
+  .grid-4 {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+/* Medium screens (tablets, 768px to 1024px) */
+@media (max-width: 1024px) {
+  .container {
+    padding: 0 1.5rem;
+  }
+  
+  .grid-3,
+  .grid-4 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+  .hide-tablet {
+    display: none !important;
+  }
+  
+  .show-tablet {
+    display: block !important;
+  }
+  
+  .subscription-tiers {
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  }
+}
+
+/* Small screens (tablets and large phones, 768px and below) */
+@media (max-width: 768px) {
+  .container {
+    padding: 0 1rem;
+  }
+  
+  .grid-2,
+  .grid-3,
+  .grid-4 {
+    grid-template-columns: 1fr;
+  }
+  
+  .hide-mobile {
+    display: none !important;
+  }
+  
+  .show-mobile {
+    display: block !important;
+  }
+  
+  .text-center-mobile {
+    text-align: center !important;
+  }
+  
+  .flex-mobile-column {
+    flex-direction: column !important;
+  }
+  
+  .gap-mobile-1 {
+    gap: 0.5rem !important;
+  }
+  
+  .gap-mobile-2 {
+    gap: 1rem !important;
+  }
+  
+  /* Hero section */
+  .hero-container {
+    flex-direction: column;
+    text-align: center;
+    padding: 2rem 1rem;
+  }
+  
+  .hero-content {
+    padding-right: 0;
+  }
+  
+  .hero-title {
+    font-size: 2rem !important;
+  }
+  
+  .hero-actions {
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  
+  .hero-actions .btn-primary,
+  .hero-actions .btn-secondary {
+    width: 100%;
+    max-width: 280px;
+  }
+  
+  /* Features */
+  .features-grid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+  
+  .feature-card {
+    padding: 1.5rem;
+  }
+  
+  /* Testimonials */
+  .testimonials-grid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+  
+  /* Auth pages */
+  .auth-card {
+    padding: 2rem 1.5rem;
+  }
+  
+  .auth-header h1 {
+    font-size: 1.8rem;
+  }
+  
+  /* Profile */
+  .profile-header {
+    padding: 1.5rem;
+  }
+  
+  .profile-stats {
+    gap: 1rem;
+  }
+  
+  .profile-name-section {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .profile-content {
+    padding: 1.5rem;
+  }
+  
+  /* Matches */
+  .matches-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  /* Chat */
+  .chat-container {
+    height: 80vh;
+    border-radius: 0;
+    margin: -1rem;
+  }
+  
+  .chat-messages {
+    padding: 1rem;
+  }
+  
+  .message-wrapper {
+    max-width: 85%;
+  }
+  
+  .chat-input-container {
+    padding: 0.75rem 1rem;
+    flex-wrap: wrap;
+  }
+  
+  .chat-input-wrapper {
+    width: 100%;
+  }
+  
+  .chat-send-btn {
+    width: 100%;
+    justify-content: center;
+  }
+  
+  /* Admin */
+  .admin-stats {
+    grid-template-columns: 1fr 1fr;
+  }
+  
+  .overview-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .verification-documents {
+    grid-template-columns: 1fr 1fr;
+  }
+  
+  /* Payment */
+  .payment-actions {
+    flex-direction: column;
+  }
+  
+  .payment-actions button {
+    width: 100%;
+  }
+  
+  /* Filters */
+  .filter-row {
+    grid-template-columns: 1fr;
+  }
+  
+  .filters-panel {
+    padding: 1rem;
+  }
+  
+  .checkboxes {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+  
+  /* Settings */
+  .settings-card {
+    padding: 0.75rem 1rem;
+  }
+  
+  /* Modal */
+  .payment-modal {
+    width: 95%;
+    margin: 0.5rem;
+  }
+  
+  .modal-body {
+    padding: 1rem;
+  }
+}
+
+/* Extra small screens (phones, 480px and below) */
+@media (max-width: 480px) {
+  .container {
+    padding: 0 0.75rem;
+  }
+  
+  .hide-phone {
+    display: none !important;
+  }
+  
+  .show-phone {
+    display: block !important;
+  }
+  
+  .text-center-phone {
+    text-align: center !important;
+  }
+  
+  .btn-primary,
+  .btn-secondary {
+    padding: 10px 20px;
+    font-size: 0.9rem;
+    width: 100%;
+  }
+  
+  /* Headers */
+  h1 {
+    font-size: 1.8rem !important;
+  }
+  
+  h2 {
+    font-size: 1.4rem !important;
+  }
+  
+  h3 {
+    font-size: 1.1rem !important;
+  }
+  
+  /* Cards */
+  .card {
+    border-radius: var(--radius);
+  }
+  
+  /* Swipe */
+  .swipe-container {
+    padding: 0.5rem;
+    min-height: 400px;
+  }
+  
+  .swipe-card-wrapper {
+    height: 400px;
+  }
+  
+  .action-btn {
+    width: 50px;
+    height: 50px;
+  }
+  
+  /* Chat */
+  .message-wrapper {
+    max-width: 90%;
+  }
+  
+  .message-bubble {
+    padding: 8px 12px;
+    font-size: 0.9rem;
+  }
+  
+  .chat-header {
+    padding: 0.75rem;
+  }
+  
+  .chat-header h3 {
+    font-size: 1rem;
+  }
+  
+  .chat-avatar,
+  .chat-avatar-placeholder {
+    width: 32px;
+    height: 32px;
+    font-size: 1rem;
+  }
+  
+  /* Auth */
+  .auth-card {
+    padding: 1.5rem 1rem;
+  }
+  
+  .auth-header h1 {
+    font-size: 1.5rem;
+  }
+  
+  .form-row {
+    flex-direction: column;
+  }
+  
+  .form-options {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+  
+  /* Admin */
+  .admin-stats {
+    grid-template-columns: 1fr;
+  }
+  
+  .stat-card {
+    padding: 1rem;
+  }
+  
+  .verification-documents {
+    grid-template-columns: 1fr;
+  }
+  
+  .verification-item {
+    padding: 1rem;
+  }
+  
+  .verification-actions {
+    flex-direction: column;
+  }
+  
+  .verification-actions button {
+    width: 100%;
+  }
+  
+  /* Subscription */
+  .subscription-tiers {
+    gap: 1rem;
+  }
+  
+  .subscription-card {
+    padding: 1.5rem;
+  }
+  
+  .plan-price {
+    font-size: 2rem;
+  }
+  
+  /* Payment */
+  .payment-options {
+    gap: 0.5rem;
+  }
+  
+  .payment-option {
+    padding: 0.75rem;
+  }
+  
+  .payment-option .option-icon {
+    font-size: 1.5rem;
+  }
+  
+  /* Tables */
+  .transaction-item {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.5rem;
+  }
+  
+  .transaction-right {
+    width: 100%;
+    text-align: left;
+  }
+  
+  /* Utilities */
+  .mt-4 {
+    margin-top: 1.5rem;
+  }
+  
+  .mb-4 {
+    margin-bottom: 1.5rem;
+  }
+  
+  .p-4 {
+    padding: 1.5rem;
+  }
+  
+  .gap-4 {
+    gap: 1.5rem;
+  }
+}
+
+/* Touch device optimizations */
+@media (hover: none) {
+  .btn-primary:hover,
+  .btn-secondary:hover,
+  .card:hover {
+    transform: none !important;
+  }
+  
+  .swipe-card {
+    cursor: grab;
+  }
+  
+  .swipe-card:active {
+    cursor: grabbing;
+  }
+  
+  .nav-link:hover,
+  .settings-card:hover,
+  .match-card:hover {
+    transform: none;
+  }
+}
+
+/* Print styles */
+@media print {
+  .navbar,
+  .nav-actions,
+  .mobile-menu-btn,
+  .chat-input-container,
+  .swipe-actions,
+  .filter-toggle {
+    display: none !important;
+  }
+  
+  .swipe-card-wrapper {
+    height: auto;
+    position: static;
+  }
+  
+  .swipe-card {
+    position: static;
+    box-shadow: none;
+    border: 1px solid #ddd;
+  }
+  
+  .chat-messages {
+    max-height: none;
+    overflow: visible;
+  }
+}
+
+/* Dark mode support (for future implementation) */
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg-primary: #1a1a2e;
+    --bg-secondary: #16213e;
+    --text-primary: #ffffff;
+    --text-secondary: #a0a0b0;
+    --border-color: #2a2a4a;
+    --shadow: 0 2px 12px rgba(0, 0, 0, 0.3);
+    --shadow-hover: 0 4px 20px rgba(0, 0, 0, 0.4);
+  }
+  
+  .card,
+  .settings-card,
+  .subscription-card,
+  .match-card {
+    background: var(--bg-secondary);
+  }
+  
+  .payment-modal,
+  .auth-card {
+    background: var(--bg-secondary);
+  }
+  
+  input,
+  select,
+  textarea {
+    background: var(--bg-primary);
+    color: var(--text-primary);
+  }
+  
+  .chat-messages {
+    background: var(--bg-primary);
+  }
+  
+  .message-wrapper.other .message-bubble {
+    background: var(--bg-secondary);
+  }
+  
+  .filters-panel {
+    background: var(--bg-secondary);
+  }
+}
