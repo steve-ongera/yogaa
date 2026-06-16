@@ -1,12 +1,41 @@
-export * from './api';
-export * from './authService';
-export * from './profileService';
-export * from './matchService';
-export * from './chatService';
-export * from './paymentService';
-export * from './adminService';
-export * from './notificationService';
+// src/services/index.js
+// Core
+import api from './api'
 
-// Default export for convenience
-import api from './api';
-export default api;
+// Services
+import { authService } from './authService'
+import { profileService } from './profileService'
+import { matchService } from './matchService'
+import { chatService } from './chatService'
+import { paymentService } from './paymentService'
+import { adminService } from './adminService'
+import { notificationService } from './notificationService'
+import { verificationService } from './verificationService'
+
+// Export all services
+export {
+  api,
+  authService,
+  profileService,
+  matchService,
+  chatService,
+  paymentService,
+  adminService,
+  notificationService,
+  verificationService,
+}
+
+// Also export as default object
+const services = {
+  api,
+  authService,
+  profileService,
+  matchService,
+  chatService,
+  paymentService,
+  adminService,
+  notificationService,
+  verificationService,
+}
+
+export default services

@@ -1,8 +1,9 @@
+// src/pages/Verification.jsx
 import React, { useState, useEffect } from 'react';
 import { useAuth } from '../context/AuthContext';
 import Navbar from '../components/common/Navbar';
 import Loader from '../components/common/Loader';
-import { verificationService } from '../services';
+import { profileService } from '../services';  // Use profileService instead
 import { FiUpload, FiCheckCircle, FiXCircle, FiClock, FiAward } from 'react-icons/fi';
 import toast from 'react-hot-toast';
 
