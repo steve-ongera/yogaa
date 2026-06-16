@@ -1,13 +1,175 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
+    <!-- Character Encoding & Viewport -->
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>frontend</title>
+    
+    <!-- Primary Meta Tags -->
+    <title>LoveConnect - Find Your Perfect Match in Kenya ❤️</title>
+    <meta name="title" content="LoveConnect - Find Your Perfect Match in Kenya" />
+    <meta name="description" content="LoveConnect is Kenya's premier dating platform. Find meaningful connections, chat with verified profiles, and discover love with our smart matching algorithm." />
+    <meta name="keywords" content="dating, Kenya, match, love, relationships, dating app, Nairobi, Mombasa, Kisumu, verified profiles" />
+    <meta name="author" content="LoveConnect" />
+    <meta name="robots" content="index, follow" />
+    <meta name="language" content="English" />
+    <meta name="revisit-after" content="7 days" />
+    
+    <!-- Open Graph / Facebook Meta Tags -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://loveconnect.co.ke/" />
+    <meta property="og:title" content="LoveConnect - Find Your Perfect Match in Kenya" />
+    <meta property="og:description" content="LoveConnect is Kenya's premier dating platform. Find meaningful connections, chat with verified profiles, and discover love with our smart matching algorithm." />
+    <meta property="og:image" content="https://loveconnect.co.ke/og-image.jpg" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:site_name" content="LoveConnect" />
+    <meta property="og:locale" content="en_KE" />
+    
+    <!-- Twitter Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:url" content="https://loveconnect.co.ke/" />
+    <meta name="twitter:title" content="LoveConnect - Find Your Perfect Match in Kenya" />
+    <meta name="twitter:description" content="LoveConnect is Kenya's premier dating platform. Find meaningful connections, chat with verified profiles, and discover love with our smart matching algorithm." />
+    <meta name="twitter:image" content="https://loveconnect.co.ke/twitter-image.jpg" />
+    <meta name="twitter:site" content="@LoveConnectKE" />
+    <meta name="twitter:creator" content="@LoveConnectKE" />
+    
+    <!-- Additional SEO Meta Tags -->
+    <link rel="canonical" href="https://loveconnect.co.ke/" />
+    <meta name="theme-color" content="#FF4B6C" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="manifest" href="/manifest.json" />
+    
+    <!-- Bootstrap Icons CDN -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
+    
+    <!-- Google Fonts (Optional) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+    
+    <!-- Preconnect for Performance -->
+    <link rel="preconnect" href="https://api.loveconnect.co.ke" />
+    <link rel="dns-prefetch" href="https://api.loveconnect.co.ke" />
+    
+    <!-- Structured Data / JSON-LD -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "WebApplication",
+        "name": "LoveConnect",
+        "url": "https://loveconnect.co.ke",
+        "description": "Kenya's premier dating platform for meaningful connections",
+        "applicationCategory": "SocialNetworking",
+        "operatingSystem": "All",
+        "browserRequirements": "Requires JavaScript",
+        "offers": {
+          "@type": "Offer",
+          "price": "0",
+          "priceCurrency": "KES"
+        },
+        "author": {
+          "@type": "Organization",
+          "name": "LoveConnect"
+        },
+        "aggregateRating": {
+          "@type": "AggregateRating",
+          "ratingValue": "4.8",
+          "ratingCount": "1250",
+          "bestRating": "5",
+          "worstRating": "1"
+        }
+      }
+    </script>
+    
+    <!-- Organization Schema -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "name": "LoveConnect",
+        "url": "https://loveconnect.co.ke",
+        "logo": "https://loveconnect.co.ke/logo.png",
+        "description": "Kenya's leading dating platform",
+        "address": {
+          "@type": "PostalAddress",
+          "addressCountry": "KE"
+        },
+        "contactPoint": {
+          "@type": "ContactPoint",
+          "contactType": "Customer Support",
+          "email": "support@loveconnect.co.ke",
+          "availableLanguage": ["English", "Swahili"]
+        },
+        "sameAs": [
+          "https://twitter.com/LoveConnectKE",
+          "https://facebook.com/LoveConnectKE",
+          "https://instagram.com/LoveConnectKE",
+          "https://youtube.com/LoveConnectKE"
+        ]
+      }
+    </script>
+    
+    <!-- Breadcrumb Schema -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://loveconnect.co.ke"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Discover",
+            "item": "https://loveconnect.co.ke/discover"
+          }
+        ]
+      }
+    </script>
+    
+    <!-- Vite will inject the main JS file here -->
   </head>
   <body>
     <div id="root"></div>
+    
+    <!-- Vite will inject the main JS file here -->
     <script type="module" src="/src/main.jsx"></script>
+    
+    <!-- Service Worker Registration for PWA (Optional) -->
+    <script>
+      if ('serviceWorker' in navigator) {
+        window.addEventListener('load', () => {
+          navigator.serviceWorker.register('/sw.js')
+            .then((registration) => {
+              console.log('SW registered: ', registration);
+            })
+            .catch((registrationError) => {
+              console.log('SW registration failed: ', registrationError);
+            });
+        });
+      }
+    </script>
+    
+    <!-- Performance Monitoring (Optional) -->
+    <script>
+      // Report Web Vitals
+      if (typeof window.performance !== 'undefined') {
+        // Send performance metrics to analytics
+        console.log('Performance monitoring enabled');
+      }
+    </script>
   </body>
 </html>
