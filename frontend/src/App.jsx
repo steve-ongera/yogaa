@@ -8,7 +8,13 @@ import { ChatProvider } from './context/ChatContext';
 import { PaymentProvider } from './context/PaymentContext';
 import { ProfileProvider } from './context/ProfileContext';
 import AppRoutes from './routes/AppRoutes';
+import Footer from './components/common/Footer';
 import './styles/global.css';
+import './styles/navbar.css';
+import './styles/chat.css';
+import './styles/payment.css';
+import './styles/footer.css';
+import './styles/responsive.css';
 
 const queryClient = new QueryClient({
   defaultOptions: {
@@ -29,7 +35,10 @@ function App() {
             <ProfileProvider>
               <PaymentProvider>
                 <ChatProvider>
-                  <AppRoutes />
+                  <div className="app-wrapper">
+                    <AppRoutes />
+                    <Footer />
+                  </div>
                   <Toaster
                     position="top-right"
                     toastOptions={{
