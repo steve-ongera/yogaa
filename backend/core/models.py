@@ -6,6 +6,8 @@ from phonenumber_field.modelfields import PhoneNumberField
 from django_countries.fields import CountryField
 import uuid
 import os
+from django.conf import settings  # Add this import
+
 
 def profile_image_path(instance, filename):
     ext = filename.split('.')[-1]
@@ -33,19 +35,17 @@ class User(AbstractUser):
     latitude = models.DecimalField(max_digits=9, decimal_places=6, null=True, blank=True)
     longitude = models.DecimalField(max_digits=9, decimal_places=6, null=True, blank=True)
     
-    # Profile settings
     is_verified = models.BooleanField(default=False)
     verification_badge = models.BooleanField(default=False)
     is_active_profile = models.BooleanField(default=True)
     last_active = models.DateTimeField(auto_now=True)
     
-    # Interests (stored as JSON)
     interests = models.JSONField(default=list, blank=True)
     
-    # Subscription
+    # Subscription - Using settings.SUBSCRIPTION_TIERS
     subscription_tier = models.CharField(
         max_length=20,
-        choices=[(tier, data['name']) for tier, data in SUBSCRIPTION_TIERS.items()],
+        choices=[(tier, data['name']) for tier, data in settings.SUBSCRIPTION_TIERS.items()],
         default='free'
     )
     subscription_expiry = models.DateTimeField(null=True, blank=True)
@@ -91,7 +91,7 @@ class User(AbstractUser):
     
     @property
     def max_images_allowed(self):
-        return SUBSCRIPTION_TIERS.get(self.subscription_tier, {}).get('max_images', 1)
+        return settings.SUBSCRIPTION_TIERS.get(self.subscription_tier, {}).get('max_images', 1)
     
     def reset_swipes_if_needed(self):
         today = timezone.now().date()
@@ -102,7 +102,7 @@ class User(AbstractUser):
     
     def has_swipes_remaining(self):
         self.reset_swipes_if_needed()
-        max_swipes = SUBSCRIPTION_TIERS.get(self.subscription_tier, {}).get('swipes_per_day', 10)
+        max_swipes = settings.SUBSCRIPTION_TIERS.get(self.subscription_tier, {}).get('swipes_per_day', 10)
         return self.swipes_today < max_swipes
 
 class ProfileImage(models.Model):
