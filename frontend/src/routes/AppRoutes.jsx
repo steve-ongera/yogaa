@@ -1,3 +1,4 @@
+// src/routes/AppRoutes.jsx
 import React from 'react';
 import { Routes, Route, Navigate } from 'react-router-dom';
 import { useAuth } from '../context/AuthContext';
@@ -22,10 +23,12 @@ const AppRoutes = () => {
 
   return (
     <Routes>
+      {/* Public routes */}
       <Route path="/" element={<Home />} />
       <Route path="/login" element={!isAuthenticated ? <Login /> : <Navigate to="/discover" />} />
       <Route path="/register" element={!isAuthenticated ? <Register /> : <Navigate to="/discover" />} />
-      
+
+      {/* Protected routes */}
       <Route element={<ProtectedRoute />}>
         <Route path="/discover" element={<Discover />} />
         <Route path="/profile" element={<Profile />} />
@@ -37,6 +40,9 @@ const AppRoutes = () => {
         <Route path="/settings" element={<Settings />} />
         <Route path="/admin" element={<AdminDashboard />} />
       </Route>
+
+      {/* 404 */}
+      <Route path="*" element={<Navigate to="/" replace />} />
     </Routes>
   );
 };

@@ -1,1 +1,34 @@
 INFO 2026-06-17 01:26:14,379 autoreload 14592 7536 Watching for file changes with StatReloader
+WARNING 2026-06-17 01:49:59,204 log 14592 7784 Not Found: /api/profile/
+WARNING 2026-06-17 01:49:59,375 log 14592 3128 Not Found: /api/profile/
+WARNING 2026-06-17 01:53:28,747 log 14592 20140 Not Found: /api/auth/login/
+INFO 2026-06-17 02:14:35,824 autoreload 11988 19560 Watching for file changes with StatReloader
+WARNING 2026-06-17 02:17:17,754 log 11988 18880 Not Found: /favicon.ico
+INFO 2026-06-17 02:18:19,889 autoreload 11988 19560 D:\BACKUP\Complete Projects\dating_application\backend\core\admin.py changed, reloading.
+INFO 2026-06-17 02:18:21,713 autoreload 15132 19884 Watching for file changes with StatReloader
+INFO 2026-06-17 02:18:29,125 autoreload 15132 19884 D:\BACKUP\Complete Projects\dating_application\backend\core\admin.py changed, reloading.
+INFO 2026-06-17 02:18:30,693 autoreload 6788 11916 Watching for file changes with StatReloader
+WARNING 2026-06-17 02:18:42,254 log 6788 6428 Not Found: /media/profiles/41/967fbccb-4c56-4639-aaf2-4201450981a1.png
+WARNING 2026-06-17 02:18:42,262 log 6788 16424 Not Found: /media/profiles/40/9e4f0c0e-ac66-4f84-8064-af6819477b9a.jpeg
+WARNING 2026-06-17 02:18:43,980 log 6788 6088 Not Found: /media/profiles/39/1efc441e-5bd6-472c-ad08-d92c6e6cd8cc.jpeg
+WARNING 2026-06-17 02:18:43,995 log 6788 6088 Not Found: /media/profiles/38/1210d87e-f999-48d1-8538-a42893d300db.jpeg
+WARNING 2026-06-17 02:18:44,012 log 6788 6088 Not Found: /media/profiles/37/747aeb09-f5a5-4a64-a9df-977737a21b23.png
+WARNING 2026-06-17 02:18:44,023 log 6788 6088 Not Found: /media/profiles/36/839f8343-b0f2-47a7-bde2-4025e12a9d22.png
+WARNING 2026-06-17 02:18:44,039 log 6788 6088 Not Found: /media/profiles/35/08108b69-fa0c-4cee-a206-5024d0fba003.jpg
+WARNING 2026-06-17 02:18:44,053 log 6788 6088 Not Found: /media/profiles/34/6c782428-41e7-4ec5-8019-6f19133f4166.png
+WARNING 2026-06-17 02:18:44,069 log 6788 6088 Not Found: /media/profiles/33/427f29e5-7258-40e0-b6ec-e1637a437eef.webp
+WARNING 2026-06-17 02:18:44,085 log 6788 6088 Not Found: /media/profiles/32/ad02aff7-79cf-4b1e-8472-f420f9e81fcc.webp
+WARNING 2026-06-17 02:18:44,105 log 6788 6088 Not Found: /media/profiles/31/d26bf667-48b0-469d-a6d3-ea4a4c0cc0bb.jpeg
+WARNING 2026-06-17 02:18:44,129 log 6788 9336 Not Found: /media/profiles/30/871f89e9-d7fe-47f5-9839-50beee69a52f.png
+WARNING 2026-06-17 02:18:44,139 log 6788 6088 Not Found: /media/profiles/29/9c300222-67a4-49d5-a8c4-fbf8171437a2.jpeg
+WARNING 2026-06-17 02:18:44,182 log 6788 6088 Not Found: /media/profiles/28/23134f63-e80b-4dd7-ac1e-e73baa907c34.jpeg
+WARNING 2026-06-17 02:18:44,191 log 6788 18780 Not Found: /media/profiles/25/1fe9b977-5daf-4dd8-9163-6562a3edd1e9.jpg
+WARNING 2026-06-17 02:18:44,198 log 6788 17700 Not Found: /media/profiles/26/9b7662df-3afa-450f-8d2d-fd6a8595b969.jpeg
+WARNING 2026-06-17 02:18:44,210 log 6788 9336 Not Found: /media/profiles/27/3c0c2430-c160-4d9d-aeb8-9bfff36d554e.webp
+WARNING 2026-06-17 02:18:44,222 log 6788 16424 Not Found: /media/profiles/24/19454d7d-5f63-4cc7-94ca-c3eb92583564.jpeg
+WARNING 2026-06-17 02:18:44,233 log 6788 6428 Not Found: /media/profiles/23/d1a9bb79-f233-413e-bc68-e47c8eca91d7.jpeg
+WARNING 2026-06-17 02:18:44,252 log 6788 6088 Not Found: /media/profiles/22/4c77d96a-c0a7-4354-bb85-bfa0e9104b83.jpeg
+WARNING 2026-06-17 02:19:18,362 log 6788 14876 Not Found: /api/auth/login/
+WARNING 2026-06-17 02:19:36,376 log 6788 15328 Not Found: /api/auth/login/
+WARNING 2026-06-17 02:19:38,101 log 6788 16896 Not Found: /api/auth/login/
+WARNING 2026-06-17 02:19:39,050 log 6788 17520 Not Found: /api/auth/login/

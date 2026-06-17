@@ -1,3 +1,4 @@
+// src/App.jsx
 import React from 'react';
 import { BrowserRouter as Router } from 'react-router-dom';
 import { QueryClient, QueryClientProvider } from '@tanstack/react-query';
@@ -8,7 +9,7 @@ import { ChatProvider } from './context/ChatContext';
 import { PaymentProvider } from './context/PaymentContext';
 import { ProfileProvider } from './context/ProfileContext';
 import AppRoutes from './routes/AppRoutes';
-import Footer from './components/common/Footer';
+import Layout from './components/Layout';  // Import Layout
 import './styles/global.css';
 import './styles/navbar.css';
 import './styles/chat.css';
@@ -35,10 +36,9 @@ function App() {
             <ProfileProvider>
               <PaymentProvider>
                 <ChatProvider>
-                  <div className="app-wrapper">
+                  <Layout>  {/* Wrap everything with Layout */}
                     <AppRoutes />
-                    <Footer />
-                  </div>
+                  </Layout>
                   <Toaster
                     position="top-right"
                     toastOptions={{
